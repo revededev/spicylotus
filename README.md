@@ -2,8 +2,8 @@
 Sauvegarde du thème enfant de spicylotus, site web : https://www.spicylotus.fr
 
 Deux espaces sont disponibles :
-mon-profil => Permet aux adhérents de télécharger leurs documents et de modifier leurs coordonnées. Ils pourront aussi supprimer leur compte
-gestion    => Permet à l'un des administrateurs du site web de générer une liste d'adhérents, d'en sélectionner un et de donner un avis sur la validation de leurs documents
+- Mon-profil => Permet aux adhérents de télécharger leurs documents et de modifier leurs coordonnées. Ils pourront aussi supprimer leur compte
+- Gestion    => Permet à l'un des administrateurs du site web de générer une liste d'adhérents, d'en sélectionner un et de donner un avis sur la validation de leurs documents
 
 
 
