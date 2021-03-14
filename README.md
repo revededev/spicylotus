@@ -17,6 +17,8 @@ A/ Initialement toutes les modifications se faisaient en rechargeant la page :
 B/ Désormais les 4 documents et l’avatar se modifient en ajax, ce qui permet un resize des jpg en Javascript avant l'envoie.
 Pour les documents et l'avatar, un token accompagne la requête ajax
 
+Ligne 128, case "update-user-docs": ne sert plus
+
 La modification des coordonnées et la suppression de l'utilisateur sont fonctionnelles mais non sécurisées
 Elles se font toujours en rechargeant la page
 
