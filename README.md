@@ -42,7 +42,7 @@ Il resterait :
 
 - Gestion : Créer la fonctionnalité concernant le changement du statut de tous les documents à "obsolète"
 - Gestion : Ajout d'un token pour la création de la liste des adhérents
-- Gestion, à l'affichage des propriétés de l'adhérent sélectionner : Ajouter la possibilité de modifier le statut d'un document dont le statut est "validé"
+- Gestion, à l'affichage des propriétés de l'adhérent sélectionner : Ajouter la possibilité de modifier le statut d'un document quan il a été "validé"
 
 - Mon-profil : Transmission des coordonnées en ajax
 - Mon-profil : Sécurisation de la modification des coordonnées et de la suppression du compte (token, id...)
