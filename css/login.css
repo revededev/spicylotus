@@ -1,0 +1,458 @@
+.docPhoto,
+.docPhoto {
+	min-width: 300px;
+	max-height: 66vh;
+    overflow-x: auto;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	resize: horizontal;
+}
+#close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+.docPhoto img{
+    width: 100%;
+}
+.docPhoto img{
+    min-width: 1000px;
+}
+#gestion button {
+	border-radius: 8px;
+}
+#seeUser{
+    display: none;
+}
+#seeUser.displayON {
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	background: rgba(255, 255, 255, 1);
+    margin:5px 5px 5px 160px;
+	padding: 5px 5px;
+	border: 1px solid black;
+}
+#seeUser,
+#gestion {
+	width: calc(100% - 170px);
+	margin: 5px 5px 5px 160px;
+	padding: 5px;
+}
+#gestion ul.flex-row li.grand{
+    border-right: 1px dashed black;
+    padding-left: 3px;
+}
+#gestion ul.flex-colomn > *:nth-of-type(2n+1){
+    background: #ccc;
+}
+#gestion ul.flex-colomn > *:nth-of-type(2n){
+    background: #eee;
+}
+#gestion ul.flex-row:hover{
+    background: #bbb;
+    color: blue;
+}
+#gestion ul.flex-row li{
+    margin: 2px;
+}
+#gestion ul.flex-row li:nth-child(1){
+    width: 24%; /* 2x */
+    border-left: 1px dashed black;
+    margin: auto 0;
+}
+#gestion [id^="numID"] {
+	padding: 0;
+    margin: 0;
+    border: none;
+    justify-content: flex-end;
+}
+#gestion ul.flex-row [id^="numID-"]:hover, #gestion ul.flex-row [id^="numID-"]:hover * {
+	background: white;
+	border-top: 8px solid white;
+	border-bottom: 7px solid white;
+}
+#gestion [id^="numID-"]:hover::before {
+	content: 'Go to ';
+	color: rgb(177, 0, 0);
+	font-weight: bold;
+	margin: auto 0;
+}
+#gestion [id^="numID"] input:hover {
+
+	font-size: 110%;
+    font-weight: bold;
+    cursor: pointer;
+}
+#gestion [id^="numID"] input {
+	background: transparent;
+    color: black;
+    width: 30px;
+    padding: 0;
+    margin: 0 0;
+    font-size: inherit;
+    font-family: inherit;
+    transition: none;
+}
+#gestion ul.flex-row li:nth-child(2){
+    width: 29%; /* 2x = 58%*/
+}
+#gestion ul.flex-row li.petit {
+	width: 13%;
+    text-align: center;
+    padding: 2px 2px;
+}
+
+
+#gestion .petit{
+	border: solid 6px;
+    margin: 2px;
+}
+
+#update-user p.valide,
+#update-user p.non.fourni,
+#update-user p.en.attente,
+#update-user p.obsolete{
+    justify-content: center;
+}
+#update-user .valide{
+    color: green;
+}
+#update-user .non.valide{
+    color: red;
+}
+#update-user .en.attente{
+    color: orange;
+}
+#update-user .non.fourni,
+#update-user .obsolete{
+    color: black;
+}
+#gestion .obsolete{
+    border-color:black;
+}
+#gestion .petit.valide{
+    border-color:green;
+}
+#gestion .petit.non.fourni,
+#gestion .petit.entete{
+border-color: transparent;
+}
+#gestion .petit.non.valide{
+    border-color:red;
+}
+#gestion .petit.en.attente{
+    border-color:orange;
+}
+#gestion .petit.obsolete{
+    border-color:black;
+}
+#gestion ul.flex-row [id^="numID"] {
+	width: 9%;
+	text-align: end;
+	border-left: 1px dashed black;
+	cursor: pointer;
+	padding: 2px 2px;
+}
+#seeUser ul,
+#seeUser li,
+#gestion ul,
+#gestion li{
+    list-style: none;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+#gestion select{
+    width: 435px;
+    margin: 0;
+    padding: 5px 5px;
+    height: 40px;
+    font-size: 1.7rem;
+}
+#gestion .flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#seeUser .flex-row-wrap,
+#gestion .flex-row-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#seeUser .flex-row-wrap > li {
+	position: relative;
+	min-width: 350px;
+	border: 1px solid black;
+	margin: 10px 20px;
+	padding: 1px 20px;
+}
+#gestion .flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#gestion form{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#gestion form div,
+#gestion form button {
+
+    padding: 1px 5px;
+    margin: auto 0;
+}
+#gestion ul.flex-colomn > li {
+	border-bottom: 1px solid black;
+	font-family: arial;
+}
+/* FOrmulaire Mon-profil */
+#gestion,
+#loginform,
+#add-user,
+#update-user{
+    background-color: #eee;
+}
+
+#loginform button,
+#add-user button,
+#update-user button,
+#update-user p.supprime{
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+#update-user p.supprime {
+	margin: 10px auto;
+	border: 1px solid black;
+	color: black;
+	background: lightgray;
+	border-radius: 5px;
+	height: 40px;
+	width: min-content;
+	padding: 5px 5px;
+}
+#update-user div.supprime {
+height: 40px;
+}
+#update-user p.supprime:hover,
+#update-user p.supprime:active,
+#update-user p.supprime:focus{
+    cursor: pointer;
+    background: var(--spicyVert);
+    color: white;
+}
+#gestion form,
+#loginform,
+#add-user{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 5px auto;
+}
+#update-user{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px auto;
+}
+
+#gestion form{
+    margin: 0 auto;
+    padding: 25px 0;
+}
+#gestion form div{
+    text-align: center;
+}
+
+#loginform,
+#add-user{
+    max-width: 600px;
+}
+#loginform p,
+#add-user p[class^="form-"],
+#update-user p:not(.noImage,.supprime){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+#add-user input,
+#update-user .six-to-trois input{
+    max-width: 66%;
+    font-size: 1.6rem;
+    height: 39px;
+    padding: 5px .7rem;
+    margin-left: 0.5rem;
+}
+#loginform input, #update-user .trois input {
+	/* max-width: 66%; */
+	font-size: 1.6rem;
+	height: 39px;
+	padding: 5px .7rem;
+    margin: 0.5rem auto;
+    border-radius: 5px;
+}
+#loginform input,
+#add-user input{
+    width: 75%;
+}
+#loginform input,
+#add-user > div{
+    width: 95%;
+    padding: 0 2%;
+}
+
+#update-user .six-to-trois{
+    width: 580px;
+    margin: 5px;
+    padding: 5px;
+}
+#loginform > *{
+	max-width: 400px;
+	margin: 5px;
+	padding: 10px 0;
+}
+#update-user .trois {
+	width: 400px;
+	margin: 5px auto;
+    padding: 10px 15px;
+    border: none;
+}
+@media screen and (max-width: 400px) {
+    #update-user .trois {
+	    width: 360px;
+        padding: 10px 10px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #update-user .trois {
+        max-width: 310px;
+        padding: 10px 10px;
+    }
+}
+#update-user .trois ul,
+#update-user .trois ul li {
+    list-style: none;
+    margin:0;
+    padding: 0;
+    line-height: 1.1;
+}
+#update-user .trois ul {
+	margin: 5px 0px;
+	padding: 0 5px;
+	text-align: justify;
+}
+#update-user form.trois:not(.monAvatar) {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 1rem;
+}
+#add-user i{
+    color: grey;
+}
+#update-user i {
+    color: red;
+	margin: 0 auto;
+	font-size: 95%;
+}
+#add-user .w100,
+#update-user .w100:not(img.imgDocProfil){
+    width: 95%;
+    text-align: right;
+}
+#update-user h3.w100{
+    width: 95%;
+    text-align: center;
+}
+#add-user h3,
+#update-user h3{
+    margin: 10px auto 5px auto;
+}
+#update-user canvas{
+    max-width: 100%;
+    max-height: 340px;
+    padding: 5px;
+	object-fit: contain;
+	margin: 0 auto;
+
+}
+#update-user img.imgDocProfil,
+#update-user p.imgDocProfil{
+	height: 340px;
+	/* width: 240px; */
+	padding: 5px;
+	object-fit: contain;
+	margin: 0 auto;
+}
+
+#update-user p.imgDocProfil,
+#update-user p.avatar {
+    justify-content: flex-start;
+
+}
+
+#update-user p.avatar {    border: 1px solid black;
+    border-radius: 5px;
+	height: 235px;
+	width: 235px;
+	padding: 5px;
+	object-fit: contain;
+	margin: 0 auto;
+}
+#update-user img.avatar{
+    justify-content: flex-start;
+    height: 235px;
+    width: 235px;
+    padding: 5px;
+    object-fit: contain;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+#update-user .form-upload{
+    margin: 0 auto;
+}
+#update-user .flex-column {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#update-user #tags-six{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: initial;
+}
+#update-user #tags-six > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: inherit;
+}
+#update-user form{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+@media screen and (max-width: 360px) {
+    #loginform input, #update-user .trois input {
+        font-size: 1.4rem;
+    }
+}

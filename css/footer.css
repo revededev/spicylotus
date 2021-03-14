@@ -1,0 +1,71 @@
+/* ================ FOOTER bas et haut : commun ============================================= */
+footer[class^="footer-"] .container > ul{
+    padding: 0;
+}
+ul#menu-haut > li > a {
+/*concerne les titres du sous-menu (les 'a' les plus éloignés de #menu-haut) */
+    font-size: 1.9rem;
+    text-decoration: underline;
+}
+
+ul[id^="menu-"] ul a {
+    /*concerne les titres du sous-menu (les 'a' les plus éloignés de #menu-haut) */
+        font-size: 1.6rem;
+    }
+/* ===================  footer en COMUN  =========================================== */
+footer[class^="footer-"] {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: var(--spicyDarkGrey);
+	border-top: 1px solid white;
+}
+footer[class^="footer-"] a {
+	background: none;
+	color: white;
+}
+/* ul#menu-bas, #menu-haut ul > li > a */
+ul[id^="menu-"] ul li a[href*=":"]:hover,
+ul[id^="menu-"] ul li a[href*=":"]:active,
+ul[id^="menu-"] ul li a[href*=":"]:focus,
+ul#menu-bas a[href*=":"]:hover,
+ul#menu-bas a[href*=":"]:active,
+ul#menu-bas a[href*=":"]:focus,
+ul[id^="menu-"] button:hover,
+ul[id^="menu-"] button:active,
+ul[id^="menu-"] button:focus{
+    color: var(--spicyVert);
+    /* font-size: 1.7rem; */
+    transition: 0.35s;
+}
+footer[class^="footer-"] li > ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+/* ===================  footer-haut  =========================================== */
+.footer-haut ul {
+    list-style: none;
+}
+ul#menu-haut {
+    display: grid;
+	grid-template-columns:repeat(var(--gridFooter), 1fr);
+	grid-column-gap: 1px;
+	grid-row-gap: 2em;
+    padding: 1px;/* margin : voir myStyle.css */
+}
+ul#menu-haut li:nth-child(2) li:nth-child(4),
+ul#menu-haut li:nth-child(2) li:nth-child(5){
+    display: inline;
+}
+ul#menu-haut li:nth-child(3) li:nth-child(5){
+        margin-left: 4px;
+}
+/* ===================  footer-bas : CVG etc... (tout en bas) ================================= */
+ul#menu-bas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+/* span.bull => initialisé dans myStyle.css */

@@ -1,0 +1,108 @@
+#decouvrez > div{
+	max-width: var(--maxWidthContainer);
+	margin:0 auto;
+}
+
+
+#decouvrez h3,
+#decouvrez h3 a{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  line-height: 1;
+	height:100%;
+	font-family: caveat,sans-serif;
+}
+#decouvrez h2 a,
+#decouvrez h3 a{
+	display:block;
+	width:100%;
+}
+#decouvrez h2 a{
+	color:blue;
+}
+#decouvrez h3 a{
+	margin:0px;
+  	font-size:2.0rem;
+	/* font-weight:400; */
+	letter-spacing:0.06rem;
+	animation: varLetterSpacing 3s ease-in 1s infinite alternate backwards running;
+	/* animation-play-state: running; */
+}
+@keyframes varLetterSpacing {
+from { letter-spacing:
+	    0.06rem;} 
+to   { letter-spacing:
+		0.30rem;}
+}
+
+.elementor-element.elementor-section-content-middle.elementor-section-stretched.elementor-section-full_width.elementor-section-height-default.elementor-section-height-default.elementor-section.elementor-top-section{
+	padding:0px 0px 40px 0px;
+}
+
+#decouvrez .container,
+.elementor-container{
+	max-width:1266px;
+}
+/* Début section respirer/danser/voler */
+#decouvrez 
+.elementor-element.elementor-widget.elementor-widget-heading
+{
+	margin-top:10px;
+	height:35px;
+}
+#decouvrez .elementor-widget-container {
+	margin-top:0px;
+	height:100%;
+}
+#decouvrez h3 a.hover,
+#decouvrez 
+.elementor-widget-heading:hover
+h3 a{
+	font-size:2.1rem;
+	color:var(--spicyVert);
+	animation-play-state: paused;
+}
+#decouvrez img{
+	width:280px;
+	height:280px;
+  object-fit: contain;
+}
+#decouvrez
+.elementor-image-carousel{
+	height:328px;
+}
+#decouvrez 
+.elementor-widget.elementor-widget-heading{
+	height:25px;
+}
+#decouvrez 
+figcaption{
+	height:32px;
+}
+#decouvrez 
+figcaption *{
+	margin: 10px 0px;
+	font-size: 20px;
+	font-weight:normal;
+	color:black;
+}
+#decouvrez figcaption:hover *,
+#decouvrez figcaption:active *,
+#decouvrez figcaption:focus *{
+	margin: 10px 0px;
+	font-size: 24px;
+	font-weight:normal;
+	color:#9dc946;
+}
+#decouvrez .elementor-row{
+	display: grid;
+	grid-template-columns:repeat(var(--gridDecouvrez), 1fr);
+	grid-column-gap: 1px;
+	grid-row-gap: 2em;
+	padding: 1px;
+}
+#decouvrez .elementor-row  section{
+  margin: 0 auto;
+  min-width:305px;
+}

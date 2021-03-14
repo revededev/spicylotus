@@ -1,0 +1,152 @@
+#primary {
+	margin-top: 2px;
+}
+header.page-header {
+	min-height: 0;
+}
+div.log {
+	display: none;
+	display: flex;
+	position: absolute;
+	top: 55px;
+	right: 5px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	z-index: 100;
+	font-size: 1.5rem;
+}
+header {
+    background-color: black;
+}
+div.header-main .container, .responsive-nav {
+
+    margin:0 0;
+}
+.responsive-nav{
+    background-color: var(--spicyDarkGrey);
+}
+.responsive-nav #site-navigation{
+    border-top: 1px solid lightgray;
+}
+nav{
+    font-size: var(--navSIZE);
+}
+.site-branding {
+    margin-left: auto;
+    margin-right: auto;
+}
+#primary-menu .sub-menu{
+    text-align:center;
+    padding-left: 0%;
+    background: var(--spicyDarkGrey);
+    
+}
+
+nav .submenu-toggle {
+    position: absolute;
+    top: 21px;
+    right: 0px;
+    font-size: 2.5rem;
+}
+.banner-caption {
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+.entry-header a {
+    color: var(--spicyBleu);
+    font-size: 24px;
+}
+
+.header-main div.container nav.main-navigation{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    justify-content: center;  
+}
+.banner .banner-caption h3.entry-title{
+    color:white;
+}
+
+div.container div.logo-menu-wrap{
+    max-width: 100%;
+}
+nav.main-navigation {
+    text-align: center;
+    background: var(--spicyDarkGrey);
+}
+div.header-t div.container p{
+    margin: 0;
+}
+.main-navigation ul li.menu-item-has-children > a {
+    padding-right: 20px;
+}
+/* =============================================================================== */
+#banner_section .btn-readmore{
+    font-family: 'Cookie', sans-serif;
+    background-color: transparent;
+    color: white;
+    font-size: 4.4rem;
+}
+
+#banner_section .btn-readmore:hover,
+#banner_section .btn-readmore:active,
+#banner_section .btn-readmore:focus{
+    color: var(--spicyVert);
+    font-size: 4.8rem;
+}
+.site-header .text-image{
+    justify-content: flex-start;
+}
+.header-six .main-navigation ul li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-six div.header-t{
+    padding: calc( 5px + .5vw) 0;
+    margin: 0;
+}
+.header-main div.container nav.main-navigation{
+    display: flex;
+    flex-direction: row;
+}
+nav, header section:nth-child(2){
+    width: 100%;
+}
+
+ul.menu{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#masthead div.header-t div.container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#masthead .container{
+	max-width:100%;
+}
+/* ==========================================   Les bouttons ================*/
+/* #masthead button.toggle-btn:focus, */
+#masthead button.toggle-btn:hover,
+#masthead button.toggle-btn:active,
+#masthead button.toggle-btn:focus {
+    background:black;
+}
+#masthead button.toggle-btn .toggle-bar {
+    background: var(--spicyVert);
+}
+#masthead button.toggle-btn:hover  .toggle-bar,
+#masthead button.toggle-btn:active .toggle-bar,
+#masthead button.toggle-btn:focus  .toggle-bar{
+    background:var(--spicyBleu);
+}

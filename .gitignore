@@ -1,0 +1,18 @@
+/img
+/logs
+/model
+# get_user_info et update_user_info rassemblés dans api_user
+/include/get_user_info.php
+/include/menuBurger.svg
+/include/update_user_info.php
+
+#
+/notes.txt
+/.vscode
+
+# Source : https://git-scm.com/docs/gitignore
+# autorise tout sauf /foo/bar
+# /*
+# !/foo
+# /foo/*
+# !/foo/bar

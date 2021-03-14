@@ -1,0 +1,75 @@
+/*  #nos-actus : block entier	#actus 	: contient les 4 dernières actus */
+#nos-actus > div {
+	max-width: var(--maxWidthContainer);
+	margin:0 auto;
+	padding:0;
+}
+
+#actus > div > div > div{
+display: grid;
+grid-template-columns:repeat(var(--gridActus), 1fr);
+grid-row-gap: 2em;
+padding: 1px;
+}
+#actus *{ /* retire les marges ext & internes par défaut */
+	margin:0;
+	padding:0;
+}
+
+#nos-actus div > a{
+	font-size: 1.55rem;
+	line-height: 0.85em;
+	color:black;
+	margin-right: 15px;
+}
+#nos-actus .elementor-widget-container{
+	text-align:right;
+}
+#nos-actus a:hover,
+#nos-actus a:active,
+#nos-actus a:focus{
+	color:black;
+	letter-spacing:0.7px;
+}
+#nos-actus time{
+	margin-right: 15px;
+}
+#actus *{
+	padding:0;
+}
+
+.eael-grid-post-holder{
+	border:none;
+}
+#actus .eael-grid-post-holder-inner{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+#actus p{
+	text-align: left;
+}
+#actus p::first-letter{
+	text-transform: uppercase;
+}
+#actus .eael-grid-post-holder-inner > div:nth-child(1){
+	width:33.33%;
+	padding:1%;
+}
+#actus .eael-grid-post-holder-inner > div:nth-child(2),
+#actus .eael-grid-post-holder-inner > div:nth-child(3){
+	width:66.66%;
+	padding:1% 5% 1% 2%;
+}
+#actus .eael-entry-media{
+	width:100px;
+	padding:5px;
+}
+#actus .eael-entry-header {
+background-color: transparent;
+}
+.eael-grid-post .eael-entry-meta{
+	display:block;
+}

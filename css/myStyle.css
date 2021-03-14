@@ -1,0 +1,539 @@
+/* A voir sur les liens <a rel="external(site) nofallow(google) author etc..."
+
+/* initialisation : DEBUT ====================================================================*/
+:root {
+    --bgmonCompte: silver;
+    --navSIZE: calc( 0.9vw + .65rem);
+    --spicyVert: #9dc946;
+    --spicyVertFluo: #a5ca5c;
+    --spicyBleu: #0391a1;
+    --spicyDarkGrey: #1b1b1b;
+    --gridDecouvrez: 2;
+    --gridActus: 2;
+    --gridFooter: 2;
+    --maxWidthContainer: 1200px;
+    --hauteurBanniere:59vh;
+}
+pre {
+	line-height: 15px;
+	font-size: 12px;
+}
+article[id~=post-],
+#primary{
+    background: white;
+    max-width: 767px;
+    margin:0 auto;
+}
+[id~=post-]  p{
+    text-align: justify;
+}
+body a:focus{ /* retire un cadre en pointillé au click*/
+    outline: 0px dotted;
+}
+body .erreur{
+    color: rgb(190, 0, 0);
+}
+body li.erreur,
+body ul.erreur{
+    list-style: none;
+}
+/* hauteur des bannieres */
+.single #content > .page-header,
+.single #content > .page-header h1 { /* corrige le 700px imposé par le theme*/
+    min-height: 10vh;
+}
+#wp-custom-header > img,
+#content > header.page-header {
+    max-height: var(--hauteurBanniere);
+    object-fit: cover;
+    font-family: 'Cookie',sans-serif;
+}
+
+#content > header.page-header{
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center center; 
+}
+/* taille du logo */
+header#masthead img {
+    width: 21.18vh; /* respect du ratio */
+    height: 20.4vh;
+    object-fit: contain;
+}
+div.log{
+    height: 20.4vh;
+}
+
+.elementor-element.elementor-grid-tablet-eael-col-2 .eael-grid-post {
+    width: auto;
+    float: left;
+}
+#banner_section div.button-wrap a{
+    font-family: 'Cookie', sans-serif;
+}
+#actus .eael-grid-post-holder-inner{
+    width:45vw;
+    height: 15vw;
+	margin:0 auto ;
+}
+#actus .eael-grid-post-holder-inner article{
+	margin:0 auto ;
+}
+/* Colorer le titre du menu selectionné ou actif :  */
+.current-menu-item,
+.current-menu-parent{
+    background: var(--spicyVert);
+}
+nav * , .header-main {
+    background-color:var(--spicyDarkGrey);
+}
+#main > article > .content-wrap > header.entry-header,
+#main > article > .content-wrap > header.entry-header *,
+#primary > .additional-post > .section-grid > .post *,
+nav.post-navigation.pagination *{
+    background-color:white;
+}
+
+.header-six .main-navigation ul li .submenu-toggle { /* couleur fleche de nav */
+    top: 21px;
+    color: var(--spicyVert);
+}
+.main-navigation ul li a,
+.main-navigation ul li a:hover,
+.main-navigation ul li a:active,
+.main-navigation ul li a:focus{
+    font-family: caveat,helvetica,sans-serif;
+    color: white;
+    font-size: 2.37rem;
+}
+ul#menu-bas li{
+    margin: 0 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+ul#menu-bas span.bull{
+    font-size: 1.6rem;
+    background-color: transparent;
+    margin: 0 0px;
+}
+ul#menu-bas li:nth-child(1) span.bull{      display: none;}
+ul#menu-haut li{                            margin:0 auto;}
+ul#menu-haut {                              margin: 0 0 0.5em 2%;}
+#primary-menu a::after {                    height: 3px;}
+
+
+/* initialisation : FIN ==============================================================*/
+/* Trombinoscope pour l'équipe */
+#trombino-equipe .elementor-widget-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#trombino-equipe .elementor-widget-wrap > div{
+    max-width: 156px;
+    margin: .7rem .7rem;
+}
+#trombino-equipe .elementor-element,
+#trombino-equipe .elementor-element div {
+    max-width: 300px;
+}
+#trombino-equipe .elementor-widget-wrap  div img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* hide .category + .entry-meta > .post-on*/
+#content > header.page-header > .container > .category,
+#content > header.page-header > .container > .entry-meta span{
+    visibility: hidden;
+}
+#content > header.page-header > .container > .entry-meta{
+    border:none;
+}
+
+.elementor-element {                        margin-top: 0 !important; /* from infografist */}
+html {
+    font-size: .625em; /* fallback IE8+ */
+    font-size: calc(1em * .625);/*IE9-IE11 math fixing. See http://bit.ly/1g4X0bX*/
+}
+.entry-content{                             margin-top: 0px;}
+.site-content > .page-header .container {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: auto;
+}
+/* ===================== Rappel des breaks points bootstrap ==========================
+  col  <  576px (mon telephone = env. 360px);
+col-sm ≥  576px for larger mobile phones;
+col-md ≥  768px for tablets;
+col-lg ≥  992px for laptops;
+col-xl ≥ 1200px for desktops;
+/* ================    page d'accueil  ==========================================    */
+.entry-title{                               color: white;}
+/* ===================  fonts  ========================= */
+@font-face {
+    font-family: 'caveat';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local('caveat'),
+        url('../fonts/Caveat-Regular.ttf');
+}
+@font-face {
+    font-family: 'rightland';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local('rightland'),
+        url('../fonts/Rightland.otf');
+}
+@font-face {
+    font-family: 'KaushanScript';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local('alef'),
+        url('../fonts/KaushanScript-Regular.ttf');
+}
+/* ===================  media queries  =========================================== */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    :root{
+        --gridActus: 2;
+        --gridDecouvrez: 2;
+    }
+    #nos-actus {                           padding:3rem;}
+}
+@media screen and (min-width: 1024px) and (max-width: 1070px) {
+    .main-navigation ul li a,
+    .main-navigation ul li a:hover,
+    .main-navigation ul li a:active,
+    .main-navigation ul li a:focus{
+        font-family: caveat,helvetica,sans-serif;
+        color: white;
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* 1024px pour le blossom theme et 992px pour bootstrap */
+    :root{
+        --gridActus: 2;
+        --gridDecouvrez: 2;
+        --hauteurBanniere:40vh;
+    }
+    #actus .eael-grid-post-holder-inner{
+        min-width:45vw;
+        min-height: 15vw;
+        margin:0 auto ;/* !important => imposer par post grid */
+    }
+    .container {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
+    #primary-menu{
+        margin: 5px 20px;
+    }
+    ul#menu-bas li{
+        margin: 0 5px;
+        font-size: 1.4rem;
+    }
+
+    .elementor-8 .elementor-element.elementor-element-5e4cd487,
+    .elementor-8 .elementor-element.elementor-element-5e4cd487 *,
+    .elementor-column-gap-default > .elementor-row >
+    .elementor-column > .elementor-element-populated{
+        padding-left:0;
+        padding-right:0;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    :root{
+        --gridDecouvrez: 1;
+        --gridActus: 1;
+        --hauteurBanniere:34vh;
+    }
+    #actus .eael-grid-post-holder-inner{
+        width:450px;
+        height: 150px;
+        margin:0 auto ;/* !important => imposer par post grid */
+    }
+    .banner .banner-caption .entry-title a {
+        color: white;
+    }
+    .container {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
+    #fito-widget.fito-widget img{
+        min-width:6px;
+    }
+    #fito-widget .event-list-item-container_BFXge .more-button_3GtH- .arrow_3Lupi {
+        margin-right:0;
+    }
+    ul#menu-bas li{
+        margin: 0 5px;
+        font-size: 1.4rem;
+    }
+    ul#menu-haut button + a{
+        text-align: center;
+    }
+
+    .elementor-8 .elementor-element.elementor-element-5e4cd487,
+    .elementor-8 .elementor-element.elementor-element-5e4cd487 *,
+    .elementor-column-gap-default > .elementor-row >
+    .elementor-column > .elementor-element-populated{
+        padding-left:0;
+        padding-right:0;
+    }
+    ul#menu-bas span.bull{
+        display: none;
+    }
+    /* #nos-actus {
+        padding:12rem;
+    } */
+}
+@media screen and (max-width: 576px) {
+    :root{
+        --gridActus: 1;
+        --gridDecouvrez: 1;
+        --gridFooter: 1;
+        --hauteurBanniere:34vh;
+    }
+    .banner .banner-caption .entry-title a {
+        color: white;
+    }
+    #actus .eael-grid-post-holder-inner{
+        width:90vw;
+        height: 30vw;
+        margin:0 auto ;/* !important => imposer par post grid */
+    }
+
+    .container { /* remplace les 15px fixent d'origine */
+        padding-left: 1.7vw;
+        padding-right: 1.7vw;
+    }
+    #fito-widget.fito-widget img{
+        min-width:8px;
+    }
+    #fito-widget #fito-page-container .event-list-item-container_BFXge .more-button_3GtH- .arrow_3Lupi {
+        margin-left:calc(3.4vw - 5px);
+    }
+    ul#menu-haut {    margin: 0 0 0.5em calc(19vw - 20px); }
+    ul#menu-haut li { margin:0; }
+    .header-main nav svg{
+        color:var(--spicyVert);
+    }
+
+ .elementor-element-populated{
+        padding-left:1.7vw;
+        padding-right:1.7vw;
+    }
+    ul#menu-bas span.bull{
+        display: none;
+    }
+    ul#menu-bas li{
+        margin: 0 5px;
+        font-size: 1.4rem;
+    }
+    #decouvrez  .elementor-swiper-button-prev{
+        left: calc(20px - 3.4vw);
+    }
+    #decouvrez .elementor-swiper-button-next{
+        right: calc(20px - 3.4vw);
+    }
+    /* #nos-actus {
+        padding:4rem;
+    } */
+}
+/*      cas particuliers.......... ========================================== */
+@media screen and (max-width: 380px) {
+
+    #trombino-equipe .elementor-widget-wrap > div{
+        max-width: 145px;
+        margin: .2rem .2rem;
+    }
+    #menu-bas, ul#menu-bas li{
+        padding-left:2px;
+        padding-right:2px;
+        margin-left:0;
+        margin-right:0;
+        letter-spacing: -0.1px;
+        font-size: 1.35rem;
+    }
+    .banner .banner-caption .entry-title a {
+        color: white;
+    }
+    .elementor-column-gap-default > .elementor-row > .elementor-column > .elementor-element-populated {
+        padding: 0px;
+    }
+    /* #nos-actus {                            padding:2rem;} */
+}
+@media screen and (max-width: 336px) { /* compatibilité d'affichage */
+    /* #nos-actus {                            padding:0.6rem;}
+    #decouvrez *{
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+    #decouvrez .elementor-widget-container{ width: 310px;}
+    .elementor-8 .elementor-element.elementor-element-ab33f9d .elementor-button{
+        padding:11px 40px 11px 40px;
+    } */
+}
+/*      cas particuliers.......... ========================================== */
+@media screen and (max-width: 1024px) {
+/* taille réduite pour les petits écrans */
+
+        .main-navigation ul li:hover > a, .main-navigation ul li:active > a, .main-navigation ul li:focus > a, .main-navigation ul li a:hover, .main-navigation ul li a:active, .main-navigation ul li a:focus {
+            margin: 0px 0px;
+        }
+        header#masthead img {
+            width: 14.54vh; /* respect du ratio */
+            height: 14vh;
+            margin-right:2%;
+            object-fit: contain;
+        }
+        div.log{
+            height: 14vh;
+        }
+/* taille du logo */
+        .elementor-element.elementor-element-4ea61d33.elementor-widget.elementor-widget-heading{
+            /* titre h4 : découvrez notre univers */
+            margin-top:20px !important; /* ! lié aux infographistes */
+            margin-bottom:10px;
+        }
+        #decouvrez .elementor-widget-wrap{
+            margin-bottom:10px !important; /* mon choix */
+        }
+        .elementor-8 .elementor-element.elementor-element-ab33f9d .elementor-button{
+            padding:11px 48px 11px 48px;
+        }
+/* FIN : taille du logo réduite pour les petits écrans */
+div.log{
+    font-size: 1.4rem;
+}
+
+button.toggle-btn {
+    position:fixed ;
+    top: 40px;
+    left: 5px;
+    z-index: 1000;
+    background: rgba(0,0,0,0.9);
+    border: black;
+    border-radius: 5px;
+}
+.responsive-nav {
+    padding: 51px 0 30px 0;
+}
+div.header-t div.container div.site-branding {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    justify-content: center;
+    text-align: right;
+  }
+/* Début : Phase d'initialisation  ======================================================*/
+
+    .main-navigation ul *{
+        box-sizing: border-box;
+    }
+    nav.main-navigation ul li a{
+        background: none;
+    }
+/*  déco du menu... */
+    .main-navigation ul#primary-menu ul.sub-menu{
+        background-color: var(--spicyDarkGrey);
+    }
+    ul#primary-menu > li,
+    ul#primary-menu li.current-menu-parent ul.sub-menu li.current-menu-item a{
+        border: 15px solid var(--spicyDarkGrey);
+    }
+    ul#primary-menu li.current-menu-parent,
+    ul#primary-menu li.current-menu-parent ul.sub-menu li.current-menu-item a{
+        background-color: var(--spicyVert);
+    }
+    ul#primary-menu li.current-menu-parent ul.sub-menu li.current-menu-item a{
+        border-radius: 34px;
+    }
+    ul#primary-menu li.current-menu-parent ul.sub-menu{
+        border-radius: 15px;
+    }
+    ul#primary-menu > li.current-menu-item,
+    ul#primary-menu li.current-menu-parent{
+        border-radius: 25px;
+    }
+
+/* after... */
+    .responsive-nav .main-navigation ul li a::after{
+        display: block;
+        /* background-color:purple; */
+        background-color:var(--spicyVert);
+    }
+    .responsive-nav .main-navigation ul#primary-menu > li > a::after{width:50%;}
+    .responsive-nav .main-navigation ul ul li a::after{width:75px;}
+
+    .main-navigation ul li:hover > a::after, .main-navigation ul li a:hover::after,
+    .main-navigation ul li:active > a::after, .main-navigation ul li a:active::after,
+    .main-navigation ul li:focus > a::after, .main-navigation ul li a:focus::after{
+        opacity: 1;
+        visibility: visible;
+        background-color:var(--spicyVert);
+    }
+/* sous-menu */
+ul#primary-menu li ul.sub-menu{
+    border-left: 5px solid var(--spicyVert);
+    border-right: 5px solid var(--spicyVert);
+    border-bottom: 5px solid var(--spicyVert);
+    margin: 0 auto;
+}
+ul#primary-menu li:not(.current-menu-parent) ul.sub-menu{
+    width:96%;
+}
+ul#primary-menu button.submenu-toggle{
+    width:97%;
+}
+
+ul#primary-menu li.current-menu-parent ul.sub-menu li.current-menu-item{
+    background-color: var(--spicyDarkGrey);
+}
+ul#primary-menu li.current-menu-parent ul.sub-menu li {
+    margin: 5px 25px;
+}
+/* sous-menu position & couleur fleche de nav */
+.responsive-nav .main-navigation .submenu-toggle {
+    width:100%;
+    text-align: end;
+    top: 4px;
+    right: 2px;
+    color: var(--spicyVert);
+}
+/* Fin : Phase d'initialisation  ======================================================*/
+
+
+/*  boutton fermer / objectif : remplacer 'x' par un boutton 'FERMER'  =================== */
+    .responsive-nav .main-navigation button.toggle-btn { /* Recadre 'Fermer' + déco bouton*/ 
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        width: 81px;
+        padding: 0px 8px;
+        border: 1px solid darkgray;
+        background-color: lightgray;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        height: 28px;
+        text-align: right;
+        margin-left: 225px;
+    }
+    #site-navigation > button::before { /* ajoute 'Fermer' */ 
+        content: 'Fermer';
+        color: black;
+    }
+    .responsive-nav .main-navigation button.toggle-btn .toggle-bar{ /* efface 'x' */
+        width:0px;
+    }
+/* =====  FIN :  boutton fermer  ========================================================= */
+}

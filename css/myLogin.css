@@ -1,0 +1,79 @@
+:root{
+    --spicyVert: #9dc946;
+    --spicyBleu: #0391a1;
+}
+.login h1 a {
+	/* background-image: url(../images/w-logo-blue.png?ver=20131202);
+    background-image: none,url(../images/wordpress-logo.svg?ver=20131107); */
+    background-image: url(../img/logo/logo_spicylotus.png);
+    /* http://localhost/spicylotus/wp-content/uploads/2020/04/cropped-neon-final-sans-fond-redimmensionne-1.png */
+	/* background-image: none,url(../images/wordpress-logo.svg?ver=20131107); */
+	background-size: 180px;
+	background-position: center top;
+    background-repeat: no-repeat;
+	color: #444;
+    height: 180px;
+	min-width: 180px;
+    
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.3;
+	margin: 0 auto 5px;
+	padding: 0;
+	text-decoration: none;
+	width: 84px;
+	text-indent: -9999px;
+	outline: 0;
+	overflow: hidden;
+	display: block;
+}
+#login h1 {
+	background-color: black;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+#login{
+    padding-top: 4%;
+}
+#login .question_yes{/*anti bot*/
+	display: none;
+}
+.login #login_error, .login .message, .login .success {
+	border-left: 4px solid var(--spicyBleu);
+}
+.wp-core-ui .button-primary {
+	background: var(--spicyBleu);
+	border-color: var(--spicyBleu);
+}
+input[type="checkbox"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime-local"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="radio"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, select:focus, textarea:focus {
+	border-color:var(--spicyBleu);
+	box-shadow: 0 0 0 1px var(--spicyBleu);
+}
+.wp-core-ui .button, .wp-core-ui .button-secondary {
+	color:var(--spicyBleu);
+	border-color:var(--spicyBleu);
+	background: #f3f5f6;
+	vertical-align: top;
+}
+.wp-core-ui .button-primary.active, .wp-core-ui .button-primary.active:focus, .wp-core-ui .button-primary.active:hover, .wp-core-ui .button-primary:active {
+	background:var(--spicyBleu);
+	border-color:var(--spicyBleu);
+	box-shadow: none;
+	color: #fff;
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+	background: var(--spicyBleu);
+	border-color: var(--spicyBleu);
+	color: #fff;
+}
+.login form .input, .login input[type="password"], .login input[type="text"] {
+	font-size: 20px;
+	line-height: 1.33333333;
+	width: 100%;
+	border-width: .0625rem;
+	padding: .1875rem .3125rem;
+	margin: 0 6px 16px 0;
+	min-height: 40px;
+	max-height: none;
+}

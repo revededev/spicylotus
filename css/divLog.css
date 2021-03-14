@@ -1,0 +1,7 @@
+div.log{display: flex;}
+@media screen and (max-width: 576px) {
+    div.log{top:2px;font-size: 95%;}
+}
+@media screen and (max-width: 576px) {
+    div.log{top:2px;font-size: 90%;}
+}
